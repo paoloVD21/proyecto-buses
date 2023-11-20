@@ -1,0 +1,510 @@
+
+/*-----Navbar estilos------*/
+.navbar {
+    background: #ffffff;
+    margin-bottom: 5px;
+    
+}
+
+/*Para el logo (podría mejorarse)*/
+.navbar-brand img {
+	width: 265px;
+	height: 50px;
+    margin-left: 28px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+/*--- Enviar enlaces del navbar a la derecha ---*/
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:hover {
+    color: #dde091;
+}
+
+/* Estilo para el ícono desplegable al reducir pantalla(responsivo)*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-nav a.nav-link {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav a.nav-link:hover {
+    transform: translateY(-5px); /* Puedes ajustar la cantidad de elevación según tus preferencias */
+
+    cursor: pointer;
+}
+
+
+
+/*** Estilos de la página ***/
+.imgBackground{
+    display: flex;
+    height: 1050px;
+    padding: 0px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: url('../img/background.png') lightgray 50% / cover no-repeat;
+}
+
+.select_seat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title{
+    display: flex;
+    width: 1000px;
+    height: 60px;
+    padding: 5px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #71B700;
+}
+
+.title h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.schedule{
+    display: flex;
+    width: 1000px;
+    height: 50px;
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 320px;
+    background: rgba(217, 217, 217, 0.80);
+    backdrop-filter: blur(2px);
+}
+
+.schedule-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-title h3{
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.schedule .ruta{
+    width: 280px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.schedule .date{
+    width: 380px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.plantilla{
+    display: flex;
+    width: 1000px;
+    height: 850px;
+    padding: 50px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    background: rgba(161, 186, 189, 0.80);
+    backdrop-filter: blur(2px);
+}
+
+.guide_icons{
+    display: flex;
+    width: 200px;
+    height: 380px;
+    padding: 15px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #F6F3D2;
+}
+
+.guide_icons h2{
+    color: #1E1E1E;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 125px;
+    height: 27px;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.free_seat, .reserve, .sold, .select, .guide_toilet, .guide_tv, .guide_stairs{
+    display: flex;
+    height: 27px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.texto-leyenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.texto-leyenda p {
+    color: #1E1E1E;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 125px;
+    height: 27px;
+    margin: 0;
+}
+
+/****** Estilos de la plantilla del bus ******/
+
+.bus{
+    display: flex;
+    height: 760px;
+    padding: 0px 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #71B700;
+}
+
+.FF_title, .SF_title {
+    display: flex;
+    width: 360px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #FFF;
+}
+
+.FF_title h3, .SF_title h3 {
+    color: #4A4A4A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.FF_seats{
+    display: flex;
+    padding: 15px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #F6F3D2;
+}
+
+.fila, .seat-row {
+    display: flex;
+    width: 360px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.asiento{
+    display: flex;
+    width: 60px;
+    height: 40px;
+    padding: 4px 6px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #36A036;
+}
+
+.asiento .asiento-icono{
+    width: 20px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: #FFF;
+}
+
+.asiento .asiento-numero{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 26px;
+    flex-shrink: 0;
+}
+
+.asiento-tercero {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F6F3D2;
+}
+
+.asiento-tercero-primera-fila .asiento-icono {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    fill: #1E1E1E;
+}
+
+.void-seat {
+    width: 60px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F6F3D2;
+}
+
+.void-seat-tercero {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F6F3D2;
+}
+
+.toilet, .stairs {
+    display: flex;
+    width: 60px;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F6F3D2;
+}
+
+.toilet svg, .stairs svg {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    fill: #1E1E1E;
+}
+
+.SF_seats {
+    display: flex;
+    padding: 25px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #F6F3D2;
+}
+
+.asiento-escaleras {
+    display: flex;
+    width: 60px;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #F6F3D2;
+}
+
+.asiento-icono-escaleras {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    fill: #1E1E1E;
+}
+
+/****** Detalle pasajes seleccionados ******/
+.detalle-continuar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.btn-continuar {
+    display: flex;
+    width: 100px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #71B700;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.detail-seats {
+    display: flex;
+    width: 280px;
+    height: 300px;
+    padding: 20px 21px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #F6F3D2;
+}
+
+.detail-seats h2 {
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+}
+
+.FF-price, .SF-price {
+    display: flex;
+    height: 35px;
+    padding: 0px 5px;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    background: #F6F3D2;
+}
+
+.floor-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.floor-price p {
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.FF-price svg {
+    width: 20px;
+    height: 18.835px;
+    fill: #1E1E1E;
+}
+
+.detail-tabs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-tabs-title {
+    display: flex;
+    width: 90px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #025971;
+}
+
+.detail-tabs-title p {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.asiento-seleccionado {
+    background: #64B6D9;
+}
+
+.asientos-Seleccionados {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.asientosSeleccionados {
+    display: flex;
+    width: 95px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-right: 1px solid #000;
+    background: #F6F3D2;
+}
+
+.preciosSeleccionados {
+    display: flex;
+    width: 95px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #F6F3D2;
+}

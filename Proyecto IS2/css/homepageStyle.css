@@ -1,0 +1,281 @@
+body{
+    font-family: Poppins;
+}
+
+/*-----Navbar estilos------*/
+.navbar {
+    background: #ffffff;
+    margin-bottom: 5px;
+    
+}
+
+/*Para el logo (podría mejorarse)*/
+.navbar-brand img {
+	width: 265px;
+	height: 50px;
+    margin-left: 28px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+/*--- Enviar enlaces del navbar a la derecha ---*/
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:hover {
+    color: #dde091;
+}
+
+/* Estilo para el ícono desplegable al reducir pantalla(responsivo)*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-nav a.nav-link {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav a.nav-link:hover {
+    transform: translateY(-5px); /* Puedes ajustar la cantidad de elevación según tus preferencias */
+
+    cursor: pointer;
+}
+
+.cuerpo{
+    background-image: url('./img/busfuturo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    margin:0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+form {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+    padding: 20px; /* Añade algún espacio interno al formulario para que sea más visible */
+    border-radius: 10px; /* Agrega bordes redondeados para mejorar el aspecto */
+}
+
+
+.row{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.nav{
+    background: white;
+    font-family: Poppins;
+    font-size: 400px;
+    padding: 25px;
+}
+
+.gcorp{
+    margin-bottom: 10px;
+}
+
+.corp{
+    background-image: url('./img/camino2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 42%;
+    padding: 20px;
+    font-family: Poppins;
+}
+
+.logo1{
+    color: white;
+    font-weight: 800;
+}
+
+.logo2{
+    background-color: #71B700;
+    color: white;
+    font-family: Poppins;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.fondo2 {
+    background-color: #D9D9D9;
+    padding: 35px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center;
+    border-radius: 15px;
+}
+
+.fondo2 p {
+    margin: 0; 
+}
+
+.fondo3 {
+    max-width: 70%;
+    height: auto;
+    flex-direction: column  ;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card-header{
+    background-color: #71B700;
+    font-weight: 800;
+    font-family: Poppins;
+    color: white;
+    border-top-left-radius: 0; /* Desactiva el redondeo superior izquierdo */
+    border-top-right-radius: 0; /* Desactiva el redondeo superior derecho */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card{
+    border-top-left-radius: 0; /* Desactiva el redondeo superior izquierdo */
+    border-top-right-radius: 0; /* Desactiva el redondeo superior derecho */
+    border-bottom-left-radius: 0.25rem; /* Establece el redondeo inferior izquierdo */
+    border-bottom-right-radius: 0.25rem; /* Establece el redondeo inferior derecho */
+    background-color: rgba(255, 255, 255, 0.0);
+    border: none;
+  }
+
+.form1{
+    border-top-left-radius: 0; /* Desactiva el redondeo superior izquierdo */
+    border-top-right-radius: 0; /* Desactiva el redondeo superior derecho */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.corp2{
+    background-image: url('./img/bus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 52%;
+    padding: 20px;
+    font-family: Poppins;
+
+}
+
+.card-header1{
+    font-weight: 800;
+    font-family: Poppins;
+    color: white;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fondocard{
+    background-image: url('./img/superbus.png');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-position-x: 25%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.fondocard1{
+    background-image: url('./img/economico.png');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-position-x: 12%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.corp3{
+    background-image: url('./img/contactanos.png');
+    background-position: center;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.form2{
+    background-color: #D8D8D8;
+    font-family: Poppins;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+.estiloboton{
+    border: none;
+    background-color: #71B700;
+    border-radius: 5px;
+    font-weight: 700;
+    color: white;
+    padding: 8px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.estiloboton:hover{
+    background-color: #517a10;
+}
+
+.cuartodiv{
+    font-family: Poppins;
+    background-color: #D8D8D8;
+    padding: 50px;
+    margin: 45px;
+    border-radius: 15px;
+}
+
+.labstyle{
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+input {
+    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid #ccc; /* Grosor del borde y color */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+textarea {
+    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid #ccc; /* Grosor del borde y color */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+select {
+    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid #ccc; /* Grosor del borde y color */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+
+.textodiv{
+    padding-left: 105px;
+    padding-right: 105px;
+    text-align: center;
+}
+
+.xform{
+    background-color: rgba(255, 255, 255, 0.0);
+}

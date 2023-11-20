@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilosSeleccionarAsiento.css">
+    <title>Document</title>
+</head>
+<body>
+  
+  <!-- Aquí iría el navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/Logo Viajers.png" alt="Logo"></a>
+    </div>
+  </nav>
+
+    <main>
+      <div class="imgBackground">
+        <div class="select_seat">
+          <div class="title">
+            <h1>seleccionar asiento</h1>
+          </div>
+          <div class="schedule">
+            <div class="schedule-title">
+              <h3 class="ruta">Trujillo - Chimbote</h3>
+            </div>
+            <div class="schedule-title">
+              <h3 class="date">Martes 14, noviembre - 9:30 pm</h3>
+            </div>
+          </div>
+          <div class="plantilla">
+            <div class="guide_icons">
+              <h2>Leyenda</h2>
+              <div class="free_seat">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <circle cx="9" cy="9" r="9" fill="#36A036"/>
+                </svg>
+                <div class="texto-leyenda">
+                  <p>Libre</p>
+                </div>  
+              </div>
+              <div class="reserve">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <circle cx="9" cy="9" r="9" fill="#FD9D10"/>
+                </svg>
+                <div class="texto-leyenda">
+                  <p>Reservado</p>
+                </div> 
+              </div>
+              <div class="sold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <circle cx="9" cy="9" r="9" fill="#F33F3F"/>
+                </svg>
+                <div class="texto-leyenda">
+                  <p>Vendido</p>
+                </div> 
+              </div>
+              <div class="select">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <circle cx="9" cy="9" r="9" fill="#64B6D9"/>
+                </svg>
+                <div class="texto-leyenda">
+                  <p>Seleccionado</p>
+                </div> 
+              </div>
+              <div class="guide_toilet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <mask id="path-1-inside-1_17_299" fill="white">
+                    <path d="M1.56522 0C1.15591 0 0.736435 0.138 0.439826 0.42225C0.144 0.705 0 1.107 0 1.5V9.75C0 11.8425 1.29287 13.5877 3.13043 14.6955V18H14.8696V14.6955C16.7071 13.5877 18 11.8418 18 9.75V9H7.82609V1.5C7.82609 1.10775 7.68209 0.70575 7.38548 0.4215C7.09043 0.138 6.67096 0 6.26087 0H1.56522ZM1.56522 1.5H6.26087V9H1.56522V1.5ZM3.13043 3V5.25H4.69565V3H3.13043ZM1.80939 10.5H16.1898C15.912 11.7952 15.12 12.9375 13.7199 13.6642L13.3043 13.875V16.5H4.69565V13.875L4.28009 13.6642C2.87922 12.9375 2.088 11.7952 1.81017 10.5H1.80939Z"/>
+                  </mask>
+                  <path d="M1.56522 0C1.15591 0 0.736435 0.138 0.439826 0.42225C0.144 0.705 0 1.107 0 1.5V9.75C0 11.8425 1.29287 13.5877 3.13043 14.6955V18H14.8696V14.6955C16.7071 13.5877 18 11.8418 18 9.75V9H7.82609V1.5C7.82609 1.10775 7.68209 0.70575 7.38548 0.4215C7.09043 0.138 6.67096 0 6.26087 0H1.56522ZM1.56522 1.5H6.26087V9H1.56522V1.5ZM3.13043 3V5.25H4.69565V3H3.13043ZM1.80939 10.5H16.1898C15.912 11.7952 15.12 12.9375 13.7199 13.6642L13.3043 13.875V16.5H4.69565V13.875L4.28009 13.6642C2.87922 12.9375 2.088 11.7952 1.81017 10.5H1.80939Z" fill="#2C5076"/>
+                  <path d="M0.439826 0.42225L5.96743 6.20548L5.97507 6.19816L0.439826 0.42225ZM3.13043 14.6955H11.1304V10.177L7.26068 7.84414L3.13043 14.6955ZM3.13043 18H-4.86957V26H3.13043V18ZM14.8696 18V26H22.8696V18H14.8696ZM14.8696 14.6955L10.7393 7.84414L6.86957 10.177V14.6955H14.8696ZM18 9H26V1H18V9ZM7.82609 9H-0.173913V17H7.82609V9ZM7.38548 0.4215L1.84259 6.19008L1.85024 6.19741L7.38548 0.4215ZM1.56522 1.5V-6.5H-6.43478V1.5H1.56522ZM6.26087 1.5H14.2609V-6.5H6.26087V1.5ZM6.26087 9V17H14.2609V9H6.26087ZM1.56522 9H-6.43478V17H1.56522V9ZM3.13043 3V-5H-4.86957V3H3.13043ZM3.13043 5.25H-4.86957V13.25H3.13043V5.25ZM4.69565 5.25V13.25H12.6957V5.25H4.69565ZM4.69565 3H12.6957V-5H4.69565V3ZM16.1898 10.5L24.0119 12.1778L26.0878 2.5H16.1898V10.5ZM13.7199 13.6642L17.3383 20.7992L17.372 20.7821L17.4056 20.7647L13.7199 13.6642ZM13.3043 13.875L9.68594 6.74008L5.30435 8.96216V13.875H13.3043ZM13.3043 16.5V24.5H21.3043V16.5H13.3043ZM4.69565 16.5H-3.30435V24.5H4.69565V16.5ZM4.69565 13.875H12.6957V8.96216L8.31406 6.74008L4.69565 13.875ZM4.28009 13.6642L0.596059 20.7655L0.62879 20.7825L0.661677 20.7992L4.28009 13.6642ZM1.81017 10.5L9.63226 8.82219L8.27617 2.5H1.81017V10.5ZM1.56522 -8C-0.497594 -8 -3.03806 -7.32529 -5.09542 -5.35366L5.97507 6.19816C4.51093 7.60129 2.80942 8 1.56522 8V-8ZM-5.08777 -5.36097C-7.19142 -3.35031 -8 -0.739519 -8 1.5H8C8 2.95352 7.47942 4.76031 5.96742 6.20548L-5.08777 -5.36097ZM-8 1.5V9.75H8V1.5H-8ZM-8 9.75C-8 15.4503 -4.45965 19.4611 -0.999808 21.5469L7.26068 7.84414C7.19747 7.80604 7.34922 7.87705 7.54961 8.18015C7.77687 8.52391 8 9.07995 8 9.75H-8ZM-4.86957 14.6955V18H11.1304V14.6955H-4.86957ZM3.13043 26H14.8696V10H3.13043V26ZM22.8696 18V14.6955H6.86957V18H22.8696ZM18.9998 21.5469C22.4603 19.4608 26 15.449 26 9.75H10C10 9.07922 10.2233 8.52335 10.4502 8.18021C10.6502 7.87753 10.8018 7.80646 10.7393 7.84414L18.9998 21.5469ZM26 9.75V9H10V9.75H26ZM18 1H7.82609V17H18V1ZM15.8261 9V1.5H-0.173913V9H15.8261ZM15.8261 1.5C15.8261 -0.746846 15.0127 -3.34956 12.9207 -5.35441L1.85024 6.19741C0.35144 4.76106 -0.173913 2.96235 -0.173913 1.5H15.8261ZM12.9284 -5.34708C10.865 -7.32968 8.31645 -8 6.26087 -8V8C5.02546 8 3.31584 7.60568 1.8426 6.19008L12.9284 -5.34708ZM6.26087 -8H1.56522V8H6.26087V-8ZM1.56522 9.5H6.26087V-6.5H1.56522V9.5ZM-1.73913 1.5V9H14.2609V1.5H-1.73913ZM6.26087 1H1.56522V17H6.26087V1ZM9.56522 9V1.5H-6.43478V9H9.56522ZM-4.86957 3V5.25H11.1304V3H-4.86957ZM3.13043 13.25H4.69565V-2.75H3.13043V13.25ZM12.6957 5.25V3H-3.30435V5.25H12.6957ZM4.69565 -5H3.13043V11H4.69565V-5ZM1.80939 18.5H16.1898V2.5H1.80939V18.5ZM8.36774 8.82219C8.45764 8.40309 8.65384 7.92012 8.99856 7.465C9.3475 7.00433 9.73891 6.71714 10.0343 6.56383L17.4056 20.7647C20.96 18.9197 23.2419 15.7678 24.0119 12.1778L8.36774 8.82219ZM10.1015 6.52933L9.68594 6.74008L16.9228 21.0099L17.3383 20.7992L10.1015 6.52933ZM5.30435 13.875V16.5H21.3043V13.875H5.30435ZM13.3043 8.5H4.69565V24.5H13.3043V8.5ZM12.6957 16.5V13.875H-3.30435V16.5H12.6957ZM8.31406 6.74008L7.8985 6.52933L0.661677 20.7992L1.07724 21.0099L8.31406 6.74008ZM7.96411 6.56299C8.25993 6.71645 8.65216 7.00416 9.0017 7.46574C9.34693 7.92164 9.54269 8.40462 9.63226 8.82219L-6.01191 12.1778C-5.2423 15.7658 -2.96235 18.9195 0.596059 20.7655L7.96411 6.56299ZM1.81017 2.5H1.80939V18.5H1.81017V2.5Z" fill="#2C5076" mask="url(#path-1-inside-1_17_299)"/>
+                </svg>
+                <div class="texto-leyenda">
+                  <p>S.S.H.H</p>
+                </div> 
+              </div>
+              <div class="guide_tv">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M16.205 16C16.6973 15.9993 17.1192 15.8037 17.4708 15.413C17.8236 15.021 18 14.55 18 14V2C18.0006 1.45067 17.8245 0.980002 17.4717 0.588002C17.1189 0.196002 16.695 0 16.2 0H1.8C1.3056 -0.000664969 0.882001 0.195002 0.529201 0.587002C0.176402 0.979001 0 1.45 0 2L16.205 16ZM16.205 16C16.2034 16 16.2017 16 16.2 16H12.6V14H14H15.9008H16.2V12V10V6V4V2H15.9028H14H12.2H5.8H4H2.0992H1.8V4M16.205 16H5.4V14H4H2.09719H1.8V12V10V6V4M1.8 4H1.79461V4C1.7964 4 1.7982 4 1.8 4Z" fill="#2C5076" stroke="#2C5076" stroke-width="8"/>
+                </svg>
+                <div class="texto-leyenda">
+                  <p>TV Smart</p>
+                </div> 
+              </div>
+              <div class="guide_stairs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M0 18V15H3V12H6V9H9V6H12V3H15V0H18V18H0Z" fill="#2C5076"/>
+                </svg>
+                <div class="texto-leyenda">
+                  <p>Escaleras</p>
+                </div> 
+              </div>
+            </div>
+            <div class="bus">
+              <div class="FF_title">
+                <h3>1er Piso - Sofa Cama 160°</h3>
+              </div>
+              <div class="FF_seats" id="asientosContainer">
+                <div class="seat-row">
+                  <div class="void-seat"></div>
+                  <div class="toilet">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                      <path d="M2.67391 0C2.10543 0 1.52283 0.191667 1.11087 0.586459C0.7 0.979167 0.5 1.5375 0.5 2.08333V13.5417C0.5 16.4479 2.29565 18.8719 4.84783 20.4104V25H21.1522V20.4104C23.7043 18.8719 25.5 16.4469 25.5 13.5417V12.5H11.3696V2.08333C11.3696 1.53854 11.1696 0.980208 10.7576 0.585416C10.3478 0.191666 9.76522 0 9.19565 0H2.67391ZM2.67391 2.08333H9.19565V12.5H2.67391V2.08333ZM4.84783 4.16667V7.29167H7.02174V4.16667H4.84783ZM3.01304 14.5833H22.9859C22.6 16.3823 21.5 17.9687 19.5554 18.9781L18.9783 19.2708V22.9167H7.02174V19.2708L6.44456 18.9781C4.49891 17.9687 3.4 16.3823 3.01413 14.5833H3.01304Z" fill="#1E1E1E"/>
+                    </svg>
+                  </div>
+                  <div class="void-seat-tercero"></div>
+                  <div class="stairs">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                      <path d="M0.5 25V20.8333H4.66667V16.6667H8.83333V12.5H13V8.33333H17.1667V4.16667H21.3333V0H25.5V25H0.5Z" fill="#1E1E1E"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="SF_title">
+                <h3>2do Piso - cama Cama 180°</h3>
+              </div>
+              <div class="SF_seats" id="asientosContainer2"></div>
+            </div>
+            <div class="detalle-continuar"> 
+              <div class="detail-seats">
+                <div>
+                  <h2>PRECIOS SEGÚN NIVEL</h2>
+                </div>
+                <div class="FF-price">
+                    <div class="floor-price">
+                      <p>Costo 1er piso</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M18 6.41771H6L7.212 3.38771C7.31334 3.13459 7.36186 2.86342 7.35457 2.59086C7.34728 2.3183 7.28434 2.05011 7.16962 1.80277C7.05489 1.55543 6.8908 1.33415 6.68743 1.15254C6.48406 0.970937 6.2457 0.832831 5.987 0.746711L5.647 0.633711C5.45622 0.56998 5.25064 0.565383 5.0572 0.620523C4.86376 0.675663 4.6915 0.787967 4.563 0.942711L0.231 6.13971C0.0816331 6.31953 -9.09699e-05 6.54595 7.5991e-08 6.77971V17.4177C7.5991e-08 17.9481 0.210714 18.4569 0.585786 18.8319C0.960859 19.207 1.46957 19.4177 2 19.4177H9.21C9.70204 19.4175 10.1767 19.236 10.5433 18.9078C10.9099 18.5796 11.1426 18.1277 11.197 17.6387L12 10.4177H18C18.5304 10.4177 19.0391 10.207 19.4142 9.83192C19.7893 9.45685 20 8.94814 20 8.41771C20 7.88728 19.7893 7.37857 19.4142 7.0035C19.0391 6.62842 18.5304 6.41771 18 6.41771Z" fill="#1E1E1E"/>
+                    </svg>
+                    <div class="floor-price">
+                      <p>120 soles</p>
+                    </div>
+                </div>
+                <div class="SF-price">
+                  <div class="floor-price">
+                    <p>Costo 2do piso</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M18 6.41771H6L7.212 3.38771C7.31334 3.13459 7.36186 2.86342 7.35457 2.59086C7.34728 2.3183 7.28434 2.05011 7.16962 1.80277C7.05489 1.55543 6.8908 1.33415 6.68743 1.15254C6.48406 0.970937 6.2457 0.832831 5.987 0.746711L5.647 0.633711C5.45622 0.56998 5.25064 0.565383 5.0572 0.620523C4.86376 0.675663 4.6915 0.787967 4.563 0.942711L0.231 6.13971C0.0816331 6.31953 -9.09699e-05 6.54595 7.5991e-08 6.77971V17.4177C7.5991e-08 17.9481 0.210714 18.4569 0.585786 18.8319C0.960859 19.207 1.46957 19.4177 2 19.4177H9.21C9.70204 19.4175 10.1767 19.236 10.5433 18.9078C10.9099 18.5796 11.1426 18.1277 11.197 17.6387L12 10.4177H18C18.5304 10.4177 19.0391 10.207 19.4142 9.83192C19.7893 9.45685 20 8.94814 20 8.41771C20 7.88728 19.7893 7.37857 19.4142 7.0035C19.0391 6.62842 18.5304 6.41771 18 6.41771Z" fill="#1E1E1E"/>
+                  </svg>
+                  <div class="floor-price">
+                    <p>150 soles</p>
+                  </div>
+                </div>
+                <div class="detail-tabs">
+                  <div class="detail-tabs-title">
+                    <p>Asiento</p>
+                  </div>
+                  <div class="detail-tabs-title">
+                    <p>Precio</p>
+                  </div>
+                </div>
+                <div class="asientos-Seleccionados">
+                  <div class="asientosSeleccionados" id="asientosSeleccionados"></div>
+                  <div class="preciosSeleccionados" id="preciosSeleccionados"></div>
+                </div>
+              </div>
+              <!-- <a href="RegistrarPasajeros.html">
+                <div class="btn-continuar">
+                  <p>Continuar</p>
+                </div>
+              </a> -->
+              <a href="RegistrarPasajeros.html">
+                <button id="btnSiguiente" onclick="irASiguientePagina()" disabled>Siguiente</button>
+              </a>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+
+      // Precios de los asientos en cada nivel
+      const preciosAsientos = {
+        primerPiso: 120,
+        segundoPiso: 150,
+      };
+
+      // Contador global de asientos seleccionados
+      let totalAsientosSeleccionados = 0;
+
+      // Función para obtener el precio por nivel
+      function obtenerPrecioPorNivel(nivel) {
+        return nivel === 'primerPiso' ? preciosAsientos.primerPiso : preciosAsientos.segundoPiso;
+      }
+    
+      // Función para manejar la selección y deselección de asientos
+      function toggleAsiento(asiento, numeroDeAsiento, nivel) {
+
+        // Obtiene el color del asiento
+        const colorAsiento = getComputedStyle(asiento).getPropertyValue('background-color');
+
+        // Verifica si el asiento está reservado (amarillo)
+        if (colorAsiento === 'rgb(253, 157, 16)') {
+          alert('Este asiento está reservado. Por favor, selecciona otro.');
+          return;
+        }
+
+        // Verifica si el asiento está ocupado (rojo)
+        if (colorAsiento === 'rgb(243, 63, 63)') {
+          alert('Este asiento está ocupado. Por favor, selecciona otro.');
+          return;
+        }
+
+        // Verifica si ya está seleccionado
+        const estaSeleccionado = asiento.classList.contains('asiento-seleccionado');
+
+        // Obtiene el precio correspondiente al nivel del asiento
+        const precio = obtenerPrecioPorNivel(nivel);
+    
+        // Verifica si ya hay 3 asientos seleccionados
+        if (totalAsientosSeleccionados >= 3 && !estaSeleccionado) {
+          alert('No puedes seleccionar más de 3 asientos.');
+          return; // Evita que se seleccione un nuevo asiento
+        }    
+    
+        // Deselecciona si ya está seleccionado, o selecciona si no lo está
+        if (estaSeleccionado) {
+          asiento.classList.remove('asiento-seleccionado');
+          totalAsientosSeleccionados--;
+    
+          // Remueve el número de asiento del div de asientos seleccionados
+          const asientosSeleccionadosDiv = document.getElementById('asientosSeleccionados');
+          const numerosAsientoSeleccionados = asientosSeleccionadosDiv.getElementsByClassName('asiento-numero');
+
+          for (let i = 0; i < numerosAsientoSeleccionados.length; i++) {
+            if (numerosAsientoSeleccionados[i].textContent === `${numeroDeAsiento}`) {
+              numerosAsientoSeleccionados[i].remove();
+              break;
+            }
+          }
+
+          // Remueve el precio del div de precios seleccionados
+          const preciosSeleccionadosDiv = document.getElementById('preciosSeleccionados');
+          const preciosAsientoSeleccionados = preciosSeleccionadosDiv.getElementsByClassName('precio-asiento');
+
+          for (let i = 0; i < preciosAsientoSeleccionados.length; i++) {
+            if (preciosAsientoSeleccionados[i].textContent === `$${precio}`) {
+              preciosAsientoSeleccionados[i].remove();
+              break;
+            }
+          }
+        } else {
+          asiento.classList.add('asiento-seleccionado');
+          totalAsientosSeleccionados++;
+
+          const asientosSeleccionadosDiv = document.getElementById('asientosSeleccionados');
+          const preciosSeleccionadosDiv = document.getElementById('preciosSeleccionados');
+
+          const numeroAsientoSeleccionado = document.createElement('div');
+          numeroAsientoSeleccionado.classList.add('asiento-numero');
+          numeroAsientoSeleccionado.textContent = `${numeroDeAsiento}`;
+
+          const precioAsientoSeleccionado = document.createElement('div');
+          precioAsientoSeleccionado.classList.add('precio-asiento');
+          precioAsientoSeleccionado.textContent = `$${precio}`;
+
+          asientosSeleccionadosDiv.appendChild(numeroAsientoSeleccionado);
+          preciosSeleccionadosDiv.appendChild(precioAsientoSeleccionado);
+        }
+
+        // Después de seleccionar/deseleccionar un asiento, verifica si al menos un asiento está seleccionado
+        const btnSiguiente = document.getElementById('btnSiguiente');
+        btnSiguiente.disabled = totalAsientosSeleccionados === 0;
+    
+        console.log('Total de asientos seleccionados: ' + totalAsientosSeleccionados);
+
+      }
+
+      function irASiguientePagina() {
+        // Lógica para ir a la siguiente página, por ejemplo:
+        //alert('¡Ir a la siguiente página!');
+      }
+
+    </script>
+
+    <!--********* PRIMER PISO *********-->
+    <script>
+      // Número de asientos en el bus (puedes obtenerlo de tu lógica de aplicación)
+      const numeroDeAsientos = 16;
+
+      // Elemento donde se agregarán las filas de asientos
+      const asientosContainer = document.getElementById('asientosContainer');
+
+      // Número de asientos por fila
+      const asientosPorFila = 4;
+
+      // Calcular el número de filas necesarias
+      const numeroDeFilas = Math.ceil(numeroDeAsientos / asientosPorFila);
+
+      // Generar dinámicamente las filas y asientos
+      for (let i = 1; i <= numeroDeFilas; i++) {
+        // Crea un elemento de fila
+        const fila = document.createElement('div');
+        fila.classList.add('fila');
+
+        // Genera dinámicamente asientos dentro de la fila
+        for (let j = 1; j <= asientosPorFila; j++) {
+          const numeroDeAsiento = (i - 1) * asientosPorFila + j;
+
+          // Personaliza la apariencia de cada asiento con dos divs internos
+          const asiento = document.createElement('div');
+          asiento.classList.add('asiento');
+
+          // Agrega un identificador único al asiento
+          const identificadorUnico = `piso1-fila${i}-asiento${j}`;
+          asiento.setAttribute('id', identificadorUnico);
+
+          // Verifica si el asiento es el tercer asiento de la fila
+          if (j === 3) {
+            asiento.classList.add('asiento-tercero');
+            if (i===1) {
+              asiento.classList.add('asiento-tercero-primera-fila');
+              // Agrega un icono SVG específico como primer div
+              const asientoIcono = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+              asientoIcono.classList.add('asiento-icono');
+              asientoIcono.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none"><path d="M8 25V22.2222H3C2.3125 22.2222 1.72375 21.95 1.23375 21.4056C0.743752 20.8611 0.499169 20.2074 0.500002 19.4444V2.77778C0.500002 2.01389 0.745002 1.35972 1.235 0.81528C1.725 0.270835 2.31334 -0.000923568 3 2.35805e-06H23C23.6875 2.35805e-06 24.2762 0.272225 24.7662 0.816669C25.2562 1.36111 25.5008 2.01482 25.5 2.77778V19.4444C25.5 20.2083 25.255 20.8625 24.765 21.4069C24.275 21.9514 23.6867 22.2231 23 22.2222H18V25H8ZM3 19.4444H23V2.77778H3V19.4444Z" fill="#1E1E1E"/></svg>';
+              asiento.appendChild(asientoIcono);
+            } 
+          } else {
+            // Agrega un icono SVG como primer div
+            const asientoIcono = document.createElement('div');
+            asientoIcono.classList.add('asiento-icono');
+            // Agrega tu SVG aquí (puedes cargarlo desde un archivo o usar un código SVG directamente)
+            asientoIcono.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M9.49355 18.8245C9.74185 18.701 9.96879 18.6008 10.1667 18.5294V18.5299H10.6667H17.3333C18.5772 18.5299 19.5 19.4311 19.5 20.4179V21.6119C19.5 22.5988 18.5772 23.5 17.3333 23.5H9.33333C8.14325 23.5 7.25053 23.0224 6.6471 22.5361C6.34491 22.2925 6.11839 22.049 5.96861 21.8679C5.89393 21.7776 5.83893 21.7036 5.80372 21.6539C5.78613 21.6291 5.77353 21.6104 5.76593 21.599L5.7583 21.5873L5.75821 21.5872L5.758 21.5868L5.75781 21.5865L5.75753 21.5861L5.75731 21.5857L5.74705 21.5692L5.7344 21.5522C5.6784 21.477 5.6382 21.4133 5.61199 21.3607C5.60448 21.3457 5.59875 21.3328 5.5944 21.322L5.61174 21.3116L5.63236 21.2963L5.63238 21.2962L5.63243 21.2962L5.63285 21.2959L5.63477 21.2945L5.64286 21.2884L5.6755 21.2643C5.70437 21.243 5.74719 21.2115 5.80233 21.1713C5.91263 21.0909 6.07212 20.9757 6.26781 20.8374C6.65962 20.5604 7.19459 20.1919 7.76942 19.8242C8.34603 19.4554 8.95402 19.0929 9.49355 18.8245ZM5.55657 21.3485C5.55657 21.3485 5.55672 21.3483 5.55704 21.348C5.55673 21.3484 5.55657 21.3485 5.55657 21.3485ZM4.32596 18.2747C4.29303 18.2992 4.26114 18.3227 4.23038 18.3451C4.12774 18.0895 3.99516 17.7549 3.84137 17.357C3.4683 16.3919 2.97107 15.056 2.4741 13.5725C1.47202 10.5812 0.5 7.07186 0.5 4.77612C0.5 2.48027 1.13839 1.44278 1.66689 0.96949C1.93695 0.727652 2.20195 0.610772 2.39302 0.553736C2.48897 0.525095 2.56622 0.511595 2.61553 0.505286C2.64012 0.50214 2.65752 0.500815 2.66652 0.500277L2.67218 0.5H3.99724L4.00006 0.500069C4.00454 0.500203 4.01318 0.500532 4.02537 0.501312C4.04992 0.502882 4.08786 0.506214 4.13452 0.513179C4.23038 0.527486 4.34972 0.555172 4.46233 0.605596C4.57437 0.655761 4.66332 0.72088 4.72393 0.802303C4.78011 0.87776 4.83333 0.99515 4.83333 1.19403C4.83333 1.50433 4.72221 1.6472 4.47259 1.96816C4.41191 2.04617 4.34304 2.13471 4.2656 2.23874C3.87625 2.76175 3.5 3.46152 3.5 4.77612C3.5 5.50992 3.80592 6.20225 4.19798 6.84592C4.51134 7.36039 4.90965 7.88929 5.30615 8.41577C5.40429 8.54609 5.50233 8.67626 5.59893 8.80603C6.60315 10.155 7.5 11.5264 7.5 13.1343C7.5 14.737 6.60188 16.1107 5.63879 17.117C5.16258 17.6145 4.68484 18.0068 4.32596 18.2747Z" fill="white" stroke="white"/></svg>';
+
+            // Listeners para el primer piso
+            asiento.addEventListener('click', () => {
+              toggleAsiento(asiento, numeroDeAsiento, 'primerPiso');
+            });
+
+            const asientoNumero = document.createElement('div');
+            asientoNumero.classList.add('asiento-numero');
+            asientoNumero.textContent = '' + numeroDeAsiento;
+
+            asiento.appendChild(asientoIcono);
+            asiento.appendChild(asientoNumero);
+          }
+
+          fila.appendChild(asiento);
+        }
+
+        // Agrega la fila al contenedor
+        asientosContainer.appendChild(fila);
+
+      }
+
+      // Cambia el color de los asientos específicos después de generarlos
+      const asientoEspecifico1 = document.getElementById('piso1-fila2-asiento2');
+      asientoEspecifico1.style.backgroundColor = '#F33F3F'; 
+
+      const asientoEspecifico2 = document.getElementById('piso1-fila4-asiento4');
+      asientoEspecifico2.style.backgroundColor = '#F33F3F'; 
+
+    </script>
+
+    <!--********* SEGUNDO PISO *********-->
+    <script>
+      // Número de asientos en el bus (puedes obtenerlo de tu lógica de aplicación)
+      const numAsientos = 24;
+
+      // Elemento donde se agregarán las filas de asientos
+      const seatsContainer = document.getElementById('asientosContainer2');
+
+      // Número de asientos por fila
+      const asientosxFila = 4;
+
+      // Calcular el número de filas necesarias
+      const numFilas = Math.ceil(numAsientos / asientosxFila);
+
+      // Generar dinámicamente las filas y asientos
+      for (let i = 1; i <= numFilas; i++) {
+        // Crea un elemento de fila
+        const fila = document.createElement('div');
+        fila.classList.add('fila');
+
+        // Genera dinámicamente asientos dentro de la fila
+        for (let j = 1; j <= asientosPorFila; j++) {
+          const numeroDeAsiento = (i - 1) * asientosPorFila + j + 16; //nro de asientos del 1er piso
+
+          // Personaliza la apariencia de cada asiento con dos divs internos
+          const asiento = document.createElement('div');
+          asiento.classList.add('asiento');
+
+          // Agrega un identificador único al asiento
+          const identificadorUnico = `piso2-fila${i}-asiento${j}`;
+          asiento.setAttribute('id', identificadorUnico);
+
+          // Verifica si el asiento es el tercer asiento de la fila
+          if (j === 3) {
+            asiento.classList.add('asiento-tercero');
+            if (i===1 || i===4) {
+              asiento.classList.add('asiento-tercero-primera-fila');
+              // Agrega un icono SVG específico como primer div
+              const asientoIcono = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+              asientoIcono.classList.add('asiento-icono');
+              asientoIcono.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none"><path d="M8 25V22.2222H3C2.3125 22.2222 1.72375 21.95 1.23375 21.4056C0.743752 20.8611 0.499169 20.2074 0.500002 19.4444V2.77778C0.500002 2.01389 0.745002 1.35972 1.235 0.81528C1.725 0.270835 2.31334 -0.000923568 3 2.35805e-06H23C23.6875 2.35805e-06 24.2762 0.272225 24.7662 0.816669C25.2562 1.36111 25.5008 2.01482 25.5 2.77778V19.4444C25.5 20.2083 25.255 20.8625 24.765 21.4069C24.275 21.9514 23.6867 22.2231 23 22.2222H18V25H8ZM3 19.4444H23V2.77778H3V19.4444Z" fill="#1E1E1E"/></svg>';
+              asiento.appendChild(asientoIcono);
+            } 
+          } else if (i===2 && j===4) {
+            asiento.classList.add('asiento-escaleras');
+            // Agrega un icono SVG específico como primer div
+            const asientoIcono = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            asientoIcono.classList.add('asiento-icono-escaleras');
+            asientoIcono.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none"><path d="M0.5 25V20.8333H4.66667V16.6667H8.83333V12.5H13V8.33333H17.1667V4.16667H21.3333V0H25.5V25H0.5Z" fill="#1E1E1E"/></svg>';
+            asiento.appendChild(asientoIcono);
+          }else {
+            // Agrega un icono SVG como primer div
+            const asientoIcono = document.createElement('div');
+            asientoIcono.classList.add('asiento-icono');
+            // Agrega tu SVG aquí (puedes cargarlo desde un archivo o usar un código SVG directamente)
+            asientoIcono.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M9.49355 18.8245C9.74185 18.701 9.96879 18.6008 10.1667 18.5294V18.5299H10.6667H17.3333C18.5772 18.5299 19.5 19.4311 19.5 20.4179V21.6119C19.5 22.5988 18.5772 23.5 17.3333 23.5H9.33333C8.14325 23.5 7.25053 23.0224 6.6471 22.5361C6.34491 22.2925 6.11839 22.049 5.96861 21.8679C5.89393 21.7776 5.83893 21.7036 5.80372 21.6539C5.78613 21.6291 5.77353 21.6104 5.76593 21.599L5.7583 21.5873L5.75821 21.5872L5.758 21.5868L5.75781 21.5865L5.75753 21.5861L5.75731 21.5857L5.74705 21.5692L5.7344 21.5522C5.6784 21.477 5.6382 21.4133 5.61199 21.3607C5.60448 21.3457 5.59875 21.3328 5.5944 21.322L5.61174 21.3116L5.63236 21.2963L5.63238 21.2962L5.63243 21.2962L5.63285 21.2959L5.63477 21.2945L5.64286 21.2884L5.6755 21.2643C5.70437 21.243 5.74719 21.2115 5.80233 21.1713C5.91263 21.0909 6.07212 20.9757 6.26781 20.8374C6.65962 20.5604 7.19459 20.1919 7.76942 19.8242C8.34603 19.4554 8.95402 19.0929 9.49355 18.8245ZM5.55657 21.3485C5.55657 21.3485 5.55672 21.3483 5.55704 21.348C5.55673 21.3484 5.55657 21.3485 5.55657 21.3485ZM4.32596 18.2747C4.29303 18.2992 4.26114 18.3227 4.23038 18.3451C4.12774 18.0895 3.99516 17.7549 3.84137 17.357C3.4683 16.3919 2.97107 15.056 2.4741 13.5725C1.47202 10.5812 0.5 7.07186 0.5 4.77612C0.5 2.48027 1.13839 1.44278 1.66689 0.96949C1.93695 0.727652 2.20195 0.610772 2.39302 0.553736C2.48897 0.525095 2.56622 0.511595 2.61553 0.505286C2.64012 0.50214 2.65752 0.500815 2.66652 0.500277L2.67218 0.5H3.99724L4.00006 0.500069C4.00454 0.500203 4.01318 0.500532 4.02537 0.501312C4.04992 0.502882 4.08786 0.506214 4.13452 0.513179C4.23038 0.527486 4.34972 0.555172 4.46233 0.605596C4.57437 0.655761 4.66332 0.72088 4.72393 0.802303C4.78011 0.87776 4.83333 0.99515 4.83333 1.19403C4.83333 1.50433 4.72221 1.6472 4.47259 1.96816C4.41191 2.04617 4.34304 2.13471 4.2656 2.23874C3.87625 2.76175 3.5 3.46152 3.5 4.77612C3.5 5.50992 3.80592 6.20225 4.19798 6.84592C4.51134 7.36039 4.90965 7.88929 5.30615 8.41577C5.40429 8.54609 5.50233 8.67626 5.59893 8.80603C6.60315 10.155 7.5 11.5264 7.5 13.1343C7.5 14.737 6.60188 16.1107 5.63879 17.117C5.16258 17.6145 4.68484 18.0068 4.32596 18.2747Z" fill="white" stroke="white"/></svg>';
+
+            //Listener 2do Piso
+            asiento.addEventListener('click', () => {              
+              toggleAsiento(asiento, numeroDeAsiento, 'segundoPiso');
+            });
+          
+            const asientoNumero = document.createElement('div');
+            asientoNumero.classList.add('asiento-numero');
+            asientoNumero.textContent = '' + numeroDeAsiento;
+
+            asiento.appendChild(asientoIcono);
+            asiento.appendChild(asientoNumero);
+          }
+
+          fila.appendChild(asiento);
+        }
+
+        // Agrega la fila al contenedor
+        seatsContainer.appendChild(fila);
+
+      }
+
+      // Cambia el color de los asientos específicos después de generarlos
+      const asientoEspecifico3 = document.getElementById('piso2-fila3-asiento1');
+      asientoEspecifico3.style.background = '#F33F3F'; 
+
+      const asientoEspecifico4 = document.getElementById('piso2-fila5-asiento4');
+      asientoEspecifico4.style.background = '#FD9D10';
+      
+    </script>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

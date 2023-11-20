@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/homepageStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Viajers</title>
+</head>
+<body>
+    <!-- Aquí iría el navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand"><img src="img/Logo Viajers.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#contactanos">Contactenos</a>
+            </div>
+        </div>
+    </div>
+  </nav>
+    <!------------------------------------------------------------------------------------>
+
+    <!--PRIMERA DIVISIÓN-->
+    <div class="cuerpo container-fluid">
+        <div class="row container-fluid">
+            <div class="col-md-5 text-center justify-content-center align-items-center">
+                <h1 class="logo1" style="font-size: 62px;"><br> VIAJA CON COMODIDAD Y SEGURIDAD</h1>
+                <h3 class="logo2">Tu Destino, Nuestro Compromiso</h3>
+
+            </div>
+            <div class="col-md-7 d-flex justify-content-center align-items-center">
+                <div class="card" style="width: 520px; " >
+                    <div class="card-header text-center" style="font-size: 25px;">
+                      BUSCAR VIAJES
+                    </div>
+                    <form class="container-fluid form1">  
+                        <br>
+                        <label for="Origen">Ciudad de origen</label>
+                        <br>
+                        <select id="Origen" name="Origen" style="width: 100%;" required>
+                            <option value="" disabled selected></option>
+                            <option value="origen1">Origen1</option>
+                            <option value="origen2">Origen2</option>
+                            <option value="origen3">Origen3</option>
+                            <option value="origen4">Origen4</option>
+                            <option value="origen5">Origen5</option>
+                        </select>
+                        <br><br>
+                        <label>Ciudad de destino</label>
+                        <br>
+                        <select id="Destino" name="Destino"style="width: 100%;" required>
+                            <option value="" disabled selected></option>
+                            <option value="destino1">Destino1</option>
+                            <option value="destino2">Destino2</option>
+                            <option value="destino3">Destino3</option>
+                            <option value="destino4">Destino4</option>
+                            <option value="destino5">Destino5</option>
+
+                        </select>
+                        <br><br>
+                        <label>Fecha de viaje</label>
+                        <input style="width: 100%;" type="date" id="fechaInput" min="" required />
+                        <br><br>
+                        <div class="text-center">
+                            <button type="button" class="boton estiloboton" onclick="validarYRedirigir()">Buscar</button>
+                        </div>
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------->
+
+    <!--DIV BLANCO-->
+    <div><br></div>
+    <!----------------------------------------------------------------------------------->
+
+    <!--SEGUNDA DIVISION-->
+    <div class="container-fluid corp" id="nosotros">
+        <br><br>
+        <h1 class="logo1" style="text-align: center; font-size: 62px;">SOBRE NOSOTROS</h1>
+        <br><br>
+    </div>
+    <div></div>
+    <div class="container-fluid">
+        <div class="row container-fluid">
+            <div class="col-md-7 textodiv">
+                <p class="fondo2">En Viajers, estamos dedicados a simplificar y enriquecer la experiencia de viaje de nuestros usuarios. Somos una plataforma en línea que conecta personas y comunidades a través de soluciones de compra y reserva de pasajes. <br><br>Nuestra misión es facilitar la vida de aquellos que confían en nosotros para sus desplazamientos, brindándoles acceso a las mejores ofertas de transporte, oportunidades para socializar y conectarse con otros viajeros, y una comunidad de apoyo que comparte consejos y experiencias de viaje.</p>
+            </div>
+            <div class="col-md-4" style="text-align: center;" >
+                <br>
+                <img  class="fondo3" src="./css/img/pasajero.jpg">
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------->
+    
+    <!--TERCERA DIVISION-->
+    <div class="container-fluid corp2" id="servicios">
+        <br><br>
+        <h1 class="logo1" style="text-align: center; font-size: 62px;">NUESTROS SERVICIOS</h1>
+        <br><br>
+    </div>
+    <div><br></div>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <section class="card form2" style="width: 300px; margin-right: 55px; margin-top: 30px;">
+            <div class="card-header1 fondocard" style="width: 300px;">
+            </div>
+            <form class="container-fluid form2" style="text-align: center;">  
+                <h3 class="logo2" >SUPER CAMA</h3>
+                <br>
+                <p style="text-align: center;">¡Date el Lujo que mereces en tu viaje!</p>
+            </form>
+        </section>
+        <section class="card form2" style="width: 300px; margin-left: 55px; margin-top: 30px;">
+            <div class="card-header1 fondocard1" style="width: 300px;";>
+            </div>
+            <form class="container-fluid form2" style="text-align: center;">  
+                <h3 class="logo2">ECONOMICO</h3>
+                <br>
+                <p style="text-align: center;">¡Una experiencia genial al alcance de todos!</p>
+            </form>
+        </section> 
+    </div>
+    <div>
+        <br><br>
+        <p style="text-align: center;"><strong>“TU DESTINO, NUESTRO COMPROMISO...”</strong></p> 
+    </div>
+    <div><br><br></div>
+    
+    <!---------------------------------------------------------------------------------->
+    <!--CUARTA DIVISIÓN-->
+    <div class="container-fluid corp3" id="contactanos">
+        <br><br>
+        <h1 class="logo1" style="text-align: center; font-size: 62px;">CONTÁCTANOS</h1>
+        <br><br>
+    </div>
+    <div><br></div>
+    <div class="container-fluid">
+        <div class="row cuartodiv">
+            <div class="col-md-7" style="padding-right: 10%;">
+                <form class="xform">
+                    <label class="labstyle">Nombre</label><br>
+                    <input type="text" placeholder="Nombre y Apellidos" style="width: 100%;" required><br><br>
+                    <label class="labstyle">Correo</label><br>
+                    <input type="email" placeholder="Correo electronico" style="width: 100%;" required><br><br>
+                    <label class="labstyle" for="telefono">Teléfono</label><br>
+                    <input type="tel" placeholder="Teléfono" id="telefono" style="width: 100%;" required><br><br>
+                    <label class="labstyle">Mensaje</label><br>
+                    <textarea name="mensaje" rows="4" cols="50" placeholder="Mensaje" style="width: 100%;" required></textarea><br><br>
+                    <button type="submit" class=" boton estiloboton">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-5 align-self-center" >
+                <h2><strong>OFICINA PRINCIPAL</strong></h2>
+                <h6 class="logo2">Dirección</h6>
+                <p>Av. America #859 - Al costado del OPEN PLAZA</p>
+                <h6 class="logo2">Ciudad</h6>
+                <p>Trujillo - Perú</p>
+                <h6 class="logo2">Horario de atención</h6>
+                <p>Lunes a Domingos: 2:00am - 11:55pm</p>
+            </div>  
+        </div>
+
+
+    </div>
+
+    
+    <!---------------------------------------------------------------------------------->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var fechaInput = document.getElementById("fechaInput");
+    
+            // Obtén la fecha actual en la zona horaria local del usuario
+            var fechaActual = new Date().toLocaleDateString('en-CA'); // Ajusta el código según la zona horaria necesaria
+    
+            // Establece la fecha actual como el valor mínimo del input
+            fechaInput.min = fechaActual;
+        });
+    </script>
+
+    <script>
+        function validarYRedirigir() {
+            // Obtener los valores de los campos del formulario
+            var origen = document.getElementById("Origen").value;
+            var destino = document.getElementById("Destino").value;
+            var fecha = document.getElementById("fechaInput").value;
+
+            // Realizar la validación, puedes agregar otras condiciones según tus necesidades
+            if (origen === "" || destino === "" || fecha === "") {
+                alert("Por favor, completa todos los campos antes de buscar.");
+            } else {
+                // Redirigir a la página index.html
+                window.location.href = "seleccionarBus.html";
+            }
+        }
+    </script>
+
+</body>
+</html> 
